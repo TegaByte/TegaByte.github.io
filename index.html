@@ -10,7 +10,7 @@ layout: default
     {% for post in site.posts %}
       <li>
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><span class="post-meta" style="float:right; padding-right:30px;">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><span class="post-meta" style="float:right; font-size:10px; padding-right:30px;">{{ post.date | date: "%b %-d, %Y" }}</span>
         </h2>
         {% if site.excerpt_separator %}
         <p>{{ post.excerpt }}<p>
