@@ -32,21 +32,22 @@
     <div class="jiathis_style">
       <a class="jiathis_button_weixin"></a>
       <a class="jiathis_button_tsina"></a>
-      <a class="jiathis_button_hi"></a>
-      <a class="jiathis_button_douban"></a>
       <a class="jiathis_button_qzone"></a>
+      <a class="jiathis_button_hi"></a>
       <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
       <a class="jiathis_counter_style"></a>
     </div>
-    <div><h4>Published</h4></div>
+    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+    <!-- JiaThis Button END -->
+    <h4>Published</h4>
     <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
 
-  {% unless page.tags == empty %}
-    <h4>Tags</h4>
-    <ul class="tag_box">
-    {% assign tags_list = page.tags %}
-    {% include JB/tags_list %}
-    </ul>
-  {% endunless %}  
+    {% unless page.tags == empty %}
+      <h4>Tags</h4>
+      <ul class="tag_box">
+      {% assign tags_list = page.tags %}
+      {% include JB/tags_list %}
+      </ul>
+    {% endunless %}  
   </div>
 </div>
