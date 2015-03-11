@@ -13,7 +13,7 @@ layout: default
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><span class="post-meta" style="float:right; font-size:10px; padding-right:30px;">{{ post.date | date: "%b %-d, %Y" }}</span>
         </h2>
         {% if site.excerpt_separator %}
-        <p>{{ post.excerpt }}<p><a style="text-align:right;" href="{{post.url}}">Read More...</a>
+        <p>{{ post.excerpt }}<p><a style="text-align:right;" href="{{post.url}}">>>Read More...</a>
         {% else %}
         <p>{{ post.content }}</p>
         {% endif %}
