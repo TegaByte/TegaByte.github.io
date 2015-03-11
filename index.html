@@ -13,7 +13,7 @@ layout: default
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><span class="post-meta" style="float:right; font-size:10px; padding-right:30px;">{{ post.date | date: "%b %-d, %Y" }}</span>
         </h2>
         {% if site.excerpt_separator %}
-        <p>{{ post.excerpt }}<p>&nbsp;&nbsp;&nbsp;<a href="{{post.url}}">Read More...</a>
+        <p>{{ post.excerpt }}&nbsp;&nbsp;&nbsp;<a href="{{post.url}}">Read More...</a><p>
         {% else %}
         <p>{{ post.content }}</p>
         {% endif %}
@@ -21,6 +21,6 @@ layout: default
     {% endfor %}
   </ul>
 
-  <h3>More Posts...<h3>
+  <h3 style="text-align:center;"><a href="{{site.url}}/archive.html">More Posts...</a><h3>
 
 </div>
