@@ -1,8 +1,8 @@
 - url: /
   title: 首页
-
+  
+- url: /hot-topic
+  title: 热点
+  
 - url: /about
   title: 关于
-  
-- url: /class
-  title: 分类

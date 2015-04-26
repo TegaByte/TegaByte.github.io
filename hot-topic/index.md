@@ -1,17 +1,21 @@
 ---
 layout: default
+title: 本站热点
 ---
 
-
 <article class="single row gutters">
-  <h2>{{ page.title }} <span style="float:right;"><time class="published" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date_to_long_string }}</time></span></h2>
+  <h2>{{ page.title }}</h2>
   
-	
-  {{ content }}
+  <h3>热评文章</h3>
+  <!-- 多说热评文章 start -->
+	<div class="ds-top-threads" data-range="monthly" data-num-items="5"></div>
+  <!-- 多说热评文章 end -->
   
-  <!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="{{ post.title }}" data-title="{{ post.title }}" data-url="{{ site.baseurl }}{{ post.url }}"></div>
-  <!-- 多说评论框 end -->
+  <h3>最新评论</h3>
+  <!-- 多说最新评论 start -->
+	<div class="ds-recent-comments" data-num-items="10" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
+  <!-- 多说最新评论 end -->
+
 </article>
 
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
@@ -27,4 +31,3 @@ var duoshuoQuery = {short_name:"tegabyte"};
 	})();
 	</script>
 <!-- 多说公共JS代码 end -->
-
