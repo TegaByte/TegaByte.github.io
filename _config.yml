@@ -1,12 +1,13 @@
 markdown: redcarpet
-highlighter: null
+highlighter: pygments
+pygments: true
 permalink: /:categories/:year/:month/:day/:title 
 
 url:
 baseurl: http://tegabyte.com
 
 redcarpet:
-  extensions: [strikethrough, tables]
+  extensions: [fenced_code_block, strikethrough, tables]
 
 sass:
   sass_dir: public/css
