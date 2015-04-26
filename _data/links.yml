@@ -1,5 +1,8 @@
 - url: /
-  title: Home
+  title: 首页
 
 - url: /about
-  title: About
+  title: 关于
+  
+- url: /class
+  title: 分类
