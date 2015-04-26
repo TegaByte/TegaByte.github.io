@@ -1,8 +1,9 @@
 ---
-layout: default
-title: The-concept-of-OpenGL-windows-viewport-clipping-region
+layout: post
+title: The concept of OpenGL: windows, viewport, clipping region
 category: OpenGL
 ---
+
 ##OpenGL概念辨析： 窗口，视口，裁剪区域
 
 网上很多文章都谈过窗口，视口，裁剪区域这些概念，但感觉看了还是不很明白。下面是我个人实践过后的一些看法：
