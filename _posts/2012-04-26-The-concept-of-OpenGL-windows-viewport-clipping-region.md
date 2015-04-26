@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OpenGL概念辨析： 窗口，视口，裁剪区域
-category: OpenGL
+category: opengl
 ---
 
 
