@@ -5,6 +5,26 @@ layout: default
 
 <article class="single row gutters">
   <h2>{{ page.title }}</h2>
+  
+  <div class="c9">
+    分类：
+        { %for cg in post.categories % }
+        <a href="/categories.html#-ref"></a>
+        { %if forloop.index < forloop.length % }
+        ,
+        { %endif%}
+        { %endfor%}
+    |
+    标签：
+        { %for cg in post.tags %}
+        <a href="/tags.html#-ref"></a>
+        { %if forloop.index < forloop.length %}
+        ,
+        { %endif%}
+        { %endfor%}
+    |
+    时间：<time date="{ { post.date|date: '%Y-%m-%d' }}"></time>
+  </div>
 	
   {{ content }}
   

@@ -1,6 +1,6 @@
 markdown: redcarpet
 highlighter: null
-permalink: /:title
+permalink: /:categories/:year/:month/:day/:title 
 
 url:
 baseurl:
