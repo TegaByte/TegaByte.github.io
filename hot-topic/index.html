@@ -6,11 +6,11 @@ title: 本站热点
 <article class="single row gutters">
   <h2>{{ page.title }}</h2>
   
+  <h3>最新文章</h3>
   <section>
-	<h3>最新文章</h3>
-	<ul id="recent_posts">{ % for rpost in site.posts limit: 15 %}
-	<li class="post">
-	<a href=""></a>
+	<ul id="recent_posts">{ % for rpost in site.posts limit: 10 %}
+	<li class="post">{{rpost.date}}&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="{{rpost.url}}">{{rpost.title}}</a>
 	</li>{ % endfor %}
 	</ul>
   </section>
