@@ -1,6 +1,5 @@
 markdown: redcarpet
 highlighter: pygments
-pygments: true
 permalink: /:categories/:year/:month/:day/:title 
 
 url:
