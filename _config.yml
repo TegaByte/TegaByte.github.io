@@ -3,7 +3,7 @@ highlighter: null
 permalink: /:categories/:year/:month/:day/:title 
 
 url:
-baseurl:
+baseurl: http://tegabyte.comm
 
 redcarpet:
   extensions: [strikethrough, tables]
