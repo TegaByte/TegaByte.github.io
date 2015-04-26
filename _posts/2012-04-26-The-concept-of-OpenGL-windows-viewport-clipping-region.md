@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The concept of OpenGL: windows, viewport, clipping region
+title: OpenGL概念辨析： 窗口，视口，裁剪区域
 category: OpenGL
 ---
 
