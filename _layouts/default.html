@@ -24,8 +24,8 @@
     </div>
 
     <!-- scripts -->
-    <script src="http://code.$.com/jQuery-1.10.2.min.js"></script>
-    <script src="{{site.baseurl}}/public/js/jQuery.fitvids.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="{{site.baseurl}}/public/js/jquery.fitvids.js"></script>
     <script>
       $(document).ready(function(){
         $("article").fitVids();
@@ -43,9 +43,8 @@
         };
 
         backToTopEle.hide(); 
-        $(window).bind("scroll", backToTopFun);
+            $(window).bind("scroll", backToTopFun);
         $('div.main a,div.pic a').attr('target', '_blank');
-        
       });
 
 
