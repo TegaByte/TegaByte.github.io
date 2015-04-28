@@ -23,28 +23,31 @@
       </footer>
     </div>
 
+    <div id="back-top">
+      <a href="#top" title="回到顶部"></a>
+    </div>
+
     <!-- scripts -->
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="{{site.baseurl}}/public/js/jquery.fitvids.js"></script>
     <script>
+      $("#back-top").hide();
       $(document).ready(function(){
         $("article").fitVids();
 
-        $.noConflict();
-        var backToTopTxt = "▲", backToTopEle = $('<div class="backToTop"></div>').appendTo($("body")).text(backToTopTxt).attr("title","Back top top").click(function() {
-            $("html, body").animate({ scrollTop: 0 }, 120);
-        }), backToTopFun = function() {
-            var st = $(document).scrollTop(), winh = $(window).height();
-            (st > 200)? backToTopEle.show(): backToTopEle.hide();    
-            //IE6下的定位
-            if (!window.XMLHttpRequest) {
-                backToTopEle.css("top", st + winh - 166); 
-            }
-        };
-
-        backToTopEle.hide(); 
-            $(window).bind("scroll", backToTopFun);
-        $('div.main a,div.pic a').attr('target', '_blank');
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $('#back-top').fadeIn();
+          } else {
+            $('#back-top').fadeOut();
+          }
+        });
+        $('#back-top a').click(function () {
+          $('body,html').animate({
+            scrollTop: 0
+          }, 800);
+          return false;
+        });
       });
 
 
