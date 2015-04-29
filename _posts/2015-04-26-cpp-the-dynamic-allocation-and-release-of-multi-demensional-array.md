@@ -1,6 +1,7 @@
 ---
 layout: post
 title: C++：多维数组的动态分配（new）和释放（delete）
+author: Jude
 category: c++
 tags: [new, delete]
 ---
