@@ -5,12 +5,18 @@ layout: default
 
 <article class="single row gutters">
   <h2 name="top">{{ page.title }}</h2>
+  <p>
+	<span><img src="http://tegabyte.qiniudn.com/calendar_alt_stroke.png" width="15px" height="15px" style="margin-bottom: -1px;"/>&nbsp;{{page.date | date: "%Y-%m-%d"}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<span><img src="http://tegabyte.qiniudn.com/author.png" width="15px" height="15px" style="margin-bottom: 0px;"/>&nbsp;{{page.author}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<span><img src="http://tegabyte.qiniudn.com/category.png" width="15px" height="15px" style="margin-bottom: -1px;"/>&nbsp;{{page.categories}}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<!--<span><img src="http://tegabyte.qiniudn.com/tags.png" width="15px" height="15px" style="margin-bottom: 0px;"/>&nbsp;{{page.tags}}</span>-->
+  </p>
 	
   {{ content }}
   
-  <a href="#top"><hr></a>
+  <hr>
   <div class="copyright">
-	<p><strong>本文固定链接：</strong><a href='{{page.url}}'>{{page.url}}</a></p>
+	<p><strong>本文固定链接：</strong><a href='{{page.url}}'>{{page.title}}</a></p>
 	<p><strong>原创文章,转载请注明出处：</strong><a href='http://tegabyte.com'>TegaByte Blog</a></p>
   </div>
   

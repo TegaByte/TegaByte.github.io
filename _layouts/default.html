@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+	<meta name="google-site-verification" content="uiR85fIbXMk5vlEZhh86jwwmm9B-vT7ICwPU_93CSw0" />
+	<meta name="baidu-site-verification" content="czynbWIX2Z" />
     {% include head.html %}
   </head>
   <body style="background-color: darkseagreen;">
@@ -18,17 +20,39 @@
 
       <footer>
         <p>
-          <a rel="license" href="https://github.com/tegabyte">TegaByte</a> &copy 2014-2015. Proudly powered by Github and Jekyll.
+          <a rel="license" href="http://tegabyte.com">TegaByte</a> &copy 2014-2015. Proudly powered by <a href="https://github.com/" target="_blank">Github</a> and <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>.
         </p>
       </footer>
+    </div>
+
+    <div id="back-top">
+      <a href="#top" title="回到顶部"></a>
     </div>
 
     <!-- scripts -->
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="{{site.baseurl}}/public/js/jquery.fitvids.js"></script>
     <script>
+      $("#back-top").hide();
       $(document).ready(function(){
         $("article").fitVids();
+<<<<<<< HEAD
+=======
+
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+            $('#back-top').fadeIn();
+          } else {
+            $('#back-top').fadeOut();
+          }
+        });
+        $('#back-top a').click(function () {
+          $('body,html').animate({
+            scrollTop: 0
+          }, 800);
+          return false;
+        });
+>>>>>>> e4fed66e7a6851b9ad8623302eb3334380ff17a9
       });
 
 
